@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/video-streaming-app/static/css/main.6304d98c.css",
-    "main.js": "/video-streaming-app/static/js/main.f7ce2d30.js",
+    "main.js": "/video-streaming-app/static/js/main.bacb4ef2.js",
     "static/js/787.b3f4ccf8.chunk.js": "/video-streaming-app/static/js/787.b3f4ccf8.chunk.js",
     "index.html": "/video-streaming-app/index.html",
     "static/media/icon-nav-bookmark.svg": "/video-streaming-app/static/media/icon-nav-bookmark.ae03bfa6919202d5fe7cb53645c460b5.svg",
@@ -14,11 +14,11 @@
     "static/media/icon-play.svg": "/video-streaming-app/static/media/icon-play.8371f8d28787ad27a68ec37af3a6c7b0.svg",
     "static/media/icon-bookmark-empty.svg": "/video-streaming-app/static/media/icon-bookmark-empty.20ce7177c045bbdbd7948bd9b4220c58.svg",
     "main.6304d98c.css.map": "/video-streaming-app/static/css/main.6304d98c.css.map",
-    "main.f7ce2d30.js.map": "/video-streaming-app/static/js/main.f7ce2d30.js.map",
+    "main.bacb4ef2.js.map": "/video-streaming-app/static/js/main.bacb4ef2.js.map",
     "787.b3f4ccf8.chunk.js.map": "/video-streaming-app/static/js/787.b3f4ccf8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6304d98c.css",
-    "static/js/main.f7ce2d30.js"
+    "static/js/main.bacb4ef2.js"
   ]
 }

@@ -1,0 +1,23 @@
+.trending-item {
+  border-radius: var(--style-br);
+  position: relative;
+
+  &__image {
+    border-radius: var(--style-br);
+    overflow: clip;
+
+    @media screen and (max-width: 700px) {
+      width: 80vw;
+    }
+  }
+
+  &__info-group {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    display: block;
+    padding: 2.5rem;
+    background-color: rgba(22, 29, 47, 50%);
+    border-radius: 0 var(--style-br);
+  }
+}

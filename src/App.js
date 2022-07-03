@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Login from "./components/UserManagement/Login";
+import FlexSide from "./components/Helpers/FlexSide";
+import Content from "./components/Content";
+import NavBar from "./components/NavBar/NavBar";
+import SearchBar from "./components/UI/SearchBar";
+import AnimatedBackground from "./components/UI/AnimatedBackground";
+import { useContext } from "react";
+import MovieContext from "./store/movie-context";
 
 function App() {
+  const ctx = useContext(MovieContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!ctx.isLoggedIn ? (
+        <AnimatedBackground>
+          <Login />
+        </AnimatedBackground>
+      ) : (
+        <FlexSide>
+          <NavBar />
+          <main>
+            <SearchBar />
+            <Content />
+          </main>
+        </FlexSide>
+      )}
+    </>
   );
 }
 

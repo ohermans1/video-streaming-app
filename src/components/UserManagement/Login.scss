@@ -1,0 +1,41 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media screen and (max-width: 705px) {
+    width: 100%;
+  }
+  &__heading {
+  }
+
+  &__no-account {
+    text-align: center;
+  }
+
+  &__link {
+    color: var(--color-red);
+    padding-left: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.Toastify__toast-body {
+  color: var(--color-navy);
+  font-size: 1.6rem;
+}

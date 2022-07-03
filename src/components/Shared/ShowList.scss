@@ -1,0 +1,21 @@
+.show-list {
+  max-width: calc(100vw - 18rem);
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__item-group {
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
+    margin-bottom: 3rem;
+    @media screen and (max-width: 1015px) {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 42vw));
+      gap: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1015px) {
+    max-width: 100%;
+  }
+}

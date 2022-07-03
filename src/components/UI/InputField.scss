@@ -1,0 +1,36 @@
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  padding: 0 0 1.5rem 1rem;
+  color: var(--color-white);
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color-white);
+  }
+
+  &::placeholder {
+    color: var(--color-gray);
+  }
+
+  &__invalid {
+    border-bottom: 1px solid var(--color-red);
+  }
+
+  &__container {
+    width: 100%;
+    position: relative;
+  }
+
+  &__warning {
+    color: var(--color-red);
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+}

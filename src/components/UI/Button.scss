@@ -1,0 +1,17 @@
+.button {
+  padding: 2rem 6rem;
+  border-radius: 1rem;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  min-width: 100%;
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  &__text {
+    color: currentColor;
+  }
+}

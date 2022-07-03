@@ -1,0 +1,58 @@
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__image {
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  &__text-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  &__text {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--color-white);
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:focus + .search__line,
+    &:active + .search__line,
+    &:hover + .search__line {
+      opacity: 1;
+    }
+  }
+
+  &__line {
+    transition: all 0.2s;
+    opacity: 0;
+    background-color: var(--color-white);
+    border: none;
+    height: 1px;
+  }
+}

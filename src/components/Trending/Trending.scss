@@ -1,0 +1,12 @@
+.trending {
+  overflow-x: scroll;
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__item-group {
+    display: flex;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,30 @@
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 25%);
+  gap: 2rem;
+
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  &__background {
+    background-color: rgba(90, 105, 143, 20%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: var(--style-br);
+    transition: opacity 0.2s;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
